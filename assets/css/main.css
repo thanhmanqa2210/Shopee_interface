@@ -1,0 +1,227 @@
+.app .header {
+  height: 120px;
+  background-image: linear-gradient(to bottom, #f53e2d, #ff6533); }
+  .app .header .header__navbar {
+    display: flex;
+    font-size: 1.32rem;
+    height: 40px;
+    justify-content: space-between; }
+    .app .header .header__navbar .navbar__list {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      margin: 12px 0px;
+      /* Qr code */ }
+      .app .header .header__navbar .navbar__list .navbar__item {
+        padding: 0px 10px;
+        color: var(--white-color);
+        font-weight: 390;
+        position: relative;
+        min-height: 20px; }
+        .app .header .header__navbar .navbar__list .navbar__item .nav__item__href {
+          color: var(--white-color);
+          text-decoration: none; }
+        .app .header .header__navbar .navbar__list .navbar__item .navbar__icon--modify {
+          font-size: 1.65rem;
+          margin: -2px 4px; }
+        .app .header .header__navbar .navbar__list .navbar__item .navbar__item_static {
+          cursor: text;
+          color: var(--white-color); }
+      .app .header .header__navbar .navbar__list .navbar__item:hover,
+      .app .header .header__navbar .navbar__list .nav__item__href:hover,
+      .app .header .header__navbar .navbar__list .navbar__icon--link:hover {
+        color: rgba(255, 255, 255, 0.75);
+        cursor: pointer; }
+      .app .header .header__navbar .navbar__list .navbar__item--bold {
+        font-weight: 500; }
+      .app .header .header__navbar .navbar__list .navbar__item--separate::after {
+        content: "";
+        margin: 0px -10px;
+        display: block;
+        position: absolute;
+        height: 13px;
+        border-left: 1px solid #fa8f82;
+        top: 9%; }
+      .app .header .header__navbar .navbar__list .navbar__icon--link {
+        color: var(--white-color);
+        text-decoration: none; }
+      .app .header .header__navbar .navbar__list .header__qr {
+        background-color: var(--white-color);
+        display: none;
+        flex-direction: column;
+        width: 186px;
+        position: absolute;
+        left: 10px;
+        top: 134%;
+        padding: 4px;
+        border-radius: 3px;
+        animation: fadeIn ease-in .2s; }
+        .app .header .header__navbar .navbar__list .header__qr .header__qr_apps {
+          display: flex;
+          flex-wrap: wrap;
+          margin-left: 8px;
+          margin-right: -8px; }
+          .app .header .header__navbar .navbar__list .header__qr .header__qr_apps .header__qr_app-img {
+            width: 39%;
+            margin: 4px 5px; }
+      .app .header .header__navbar .navbar__list .header__qr::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 14px;
+        left: 0px;
+        top: -13px; }
+      .app .header .header__navbar .navbar__list .navbar__item--qr:hover .header__qr {
+        display: flex; }
+      .app .header .header__navbar .navbar__list .nav__item__notifycation {
+        background-color: #fff;
+        position: absolute;
+        width: 400px;
+        display: none;
+        height: 410px;
+        right: 9px;
+        top: 134%;
+        border-radius: 3px;
+        border: 1px solid rgba(0, 0, 0, 0.09);
+        transform-origin: calc(100% - 20px) top;
+        animation: headerNotifyGrowth ease-in .2s;
+        will-change: opacity, transform; }
+        .app .header .header__navbar .navbar__list .nav__item__notifycation .nav__notifycation--header {
+          height: 4.0rem;
+          color: #bbb;
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 4.0rem;
+          background-color: var(--white-color);
+          padding: 0px 10px;
+          cursor: default;
+          user-select: none; }
+        .app .header .header__navbar .navbar__list .nav__item__notifycation .nav__notifycation__list {
+          background-color: #fff2ee;
+          height: 82%;
+          list-style: none;
+          padding-left: 0px; }
+          .app .header .header__navbar .navbar__list .nav__item__notifycation .nav__notifycation__list .notifycation__item .notifycation__item__link {
+            text-decoration: none;
+            display: flex;
+            padding: 8px 10px; }
+            .app .header .header__navbar .navbar__list .nav__item__notifycation .nav__notifycation__list .notifycation__item .notifycation__item__link .notifycation-info {
+              display: flex;
+              flex-direction: column;
+              margin-left: 2px; }
+              .app .header .header__navbar .navbar__list .nav__item__notifycation .nav__notifycation__list .notifycation__item .notifycation__item__link .notifycation-info .notifycation-name {
+                font-size: 14px;
+                margin: 0px 0px 5px;
+                color: var(--black-color);
+                font-weight: 300; }
+              .app .header .header__navbar .navbar__list .nav__item__notifycation .nav__notifycation__list .notifycation__item .notifycation__item__link .notifycation-info .notifycation-description {
+                font-size: 12px;
+                color: #756f6d;
+                margin: 0px 0px 5px; }
+            .app .header .header__navbar .navbar__list .nav__item__notifycation .nav__notifycation__list .notifycation__item .notifycation__item__link .notifycation-img {
+              width: 4.8rem;
+              object-fit: contain; }
+          .app .header .header__navbar .navbar__list .nav__item__notifycation .nav__notifycation__list .notifycation__item:hover {
+            background-color: var(--light-color); }
+        .app .header .header__navbar .navbar__list .nav__item__notifycation .nav__footer__notifycation {
+          display: flex;
+          font-size: 1.4rem;
+          font-weight: 400; }
+          .app .header .header__navbar .navbar__list .nav__item__notifycation .nav__footer__notifycation .footer__notify__link {
+            text-decoration: none;
+            padding: 9px;
+            color: rgba(0, 0, 0, 0.68);
+            margin: auto; }
+      .app .header .header__navbar .navbar__list .nav__item__notifycation::after {
+        position: absolute;
+        content: "";
+        border-width: 20px 27px;
+        border-style: solid;
+        top: -30px;
+        right: 15px;
+        border-color: transparent transparent var(--white-color) transparent; }
+      .app .header .header__navbar .navbar__list .nav__item__notifycation::before {
+        position: absolute;
+        content: "";
+        width: 21%;
+        height: 16px;
+        right: -1px;
+        top: -16px; }
+      .app .header .header__navbar .navbar__list .navbar__hover--notify:hover .nav__item__notifycation {
+        display: block; }
+
+.auth__form {
+  width: 500px;
+  background-color: var(--white-color);
+  border-radius: 4px;
+  overflow: hidden; }
+
+.auth__form__container {
+  padding: 0px 32px; }
+  .auth__form__container .auth__form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 12px; }
+    .auth__form__container .auth__form__header .auth__form__heading {
+      font-weight: 490;
+      font-size: 2.2rem;
+      color: var(--text-color); }
+    .auth__form__container .auth__form__header .auth__form-switch-btn {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--primary-color);
+      cursor: pointer; }
+  .auth__form__container .auth__form__form .auth__form-group .auth__form__input {
+    width: 100%;
+    height: 4.0rem;
+    margin-top: 1.6rem;
+    padding: 0 1.2rem;
+    font-size: 1.2rem;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid var(--border-color); }
+  .auth__form__container .auth__form__form .auth__form-group .auth__form__input:focus {
+    border-color: #8889; }
+  .auth__form__container .auth__form__aside {
+    margin-top: 18px; }
+    .auth__form__container .auth__form__aside .auth__form__policy_text {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      display: inline-block;
+      text-align: center;
+      padding: 0px 12px; }
+      .auth__form__container .auth__form__aside .auth__form__policy_text .auth__form__text__link {
+        text-decoration: none;
+        color: var(--primary-color); }
+    .auth__form__container .auth__form__aside .aside_help {
+      display: flex;
+      justify-content: flex-end; }
+      .auth__form__container .auth__form__aside .aside_help .help__link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: #939393; }
+        .auth__form__container .auth__form__aside .aside_help .help__link:nth-child(1) {
+          color: var(--primary-color); }
+      .auth__form__container .auth__form__aside .aside_help .help__separate {
+        height: 2.1rem;
+        margin: -3px 15px;
+        border-left: 1px solid #DBDBDB; }
+  .auth__form__container .auth__form__controls {
+    display: flex;
+    margin-top: 80px;
+    justify-content: flex-end;
+    margin-bottom: 21px; }
+
+.auth__form__socials {
+  background-color: #f5f5f5;
+  padding: 12px 36px;
+  display: flex;
+  justify-content: space-between; }
+  .auth__form__socials .auth__social_icon {
+    font-size: 1.7rem; }
+  .auth__form__socials .icon_facebook {
+    margin-left: -16px; }
+  .auth__form__socials .auth__social_title {
+    margin: 0px 30px; }
