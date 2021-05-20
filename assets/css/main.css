@@ -297,6 +297,8 @@
         padding: 2px 4px;
         font-size: 1.5rem;
         line-height: 1.4rem;
+        top: calc(100% - 33px);
+        right: 0px;
         border-radius: 50%;
         color: var(--primary-color);
         background-color: var(--white-color); }
