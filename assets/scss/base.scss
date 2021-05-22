@@ -151,6 +151,10 @@ html {
     background-color: rgba($color: #000000, $alpha: 0.05);
 }
 
+.btn--cart:hover {
+    opacity: 0.9;
+}
+
 // button style
 .btn.btn--primary {
     color: var(--white-color);

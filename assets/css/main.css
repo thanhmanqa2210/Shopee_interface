@@ -27,6 +27,54 @@
         .header .header__navbar .navbar__list .navbar__item .navbar__item_static {
           cursor: text;
           color: var(--white-color); }
+        .header .header__navbar .navbar__list .navbar__item .user__img {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          margin: -3px 4px;
+          border: 1px solid rgba(0, 0, 0, 0.19); }
+      .header .header__navbar .navbar__list .user__item {
+        display: flex;
+        position: relative; }
+        .header .header__navbar .navbar__list .user__item .user__item--menu {
+          display: none;
+          position: absolute;
+          width: 100%;
+          list-style: none;
+          padding: 3px 3px 3px 0px;
+          background-color: var(--white-color);
+          color: var(--text-color);
+          border-radius: 2px;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.19);
+          top: calc(100% + 1px);
+          right: 10.5px;
+          z-index: 1;
+          transform-origin: calc(100% - 38px) top;
+          animation: headerNotifyGrowth ease-in 0.3s; }
+          .header .header__navbar .navbar__list .user__item .user__item--menu .menu__item {
+            padding: 10px 14px;
+            font-size: 1.5rem;
+            font-weight: 500; }
+          .header .header__navbar .navbar__list .user__item .user__item--menu .menu__item:hover {
+            background-color: var(--light-color);
+            color: rgba(0, 0, 0, 0.4); }
+        .header .header__navbar .navbar__list .user__item .user__item--menu::before {
+          position: absolute;
+          content: "";
+          border-style: solid;
+          border-width: 13px 17px;
+          top: calc(100% - 137px);
+          right: 30px;
+          border-color: transparent transparent var(--white-color) transparent; }
+        .header .header__navbar .navbar__list .user__item .user__item--menu::after {
+          position: absolute;
+          content: "";
+          top: calc(100% - 124px);
+          right: 0;
+          width: 123px;
+          height: 8px; }
+      .header .header__navbar .navbar__list .user__item:hover .user__item--menu {
+        display: block; }
       .header .header__navbar .navbar__list .navbar__item:hover,
       .header .header__navbar .navbar__list .nav__item__href:hover,
       .header .header__navbar .navbar__list .navbar__icon--link:hover {
@@ -294,12 +342,12 @@
       padding: 0px 10px; }
       .header__with__search .header__cart .header__cart__wrap .cart__notice {
         position: absolute;
-        padding: 2px 4px;
-        font-size: 1.5rem;
-        line-height: 1.4rem;
-        top: calc(100% - 33px);
-        right: 0px;
-        border-radius: 50%;
+        padding: 1px 6px;
+        font-size: 1.6rem;
+        line-height: 1.5rem;
+        top: calc(100% - 35px);
+        right: -3px;
+        border-radius: 42%;
         color: var(--primary-color);
         background-color: var(--white-color);
         cursor: pointer; }
@@ -310,7 +358,7 @@
     .header__with__search .header__cart .header__cart_list {
       display: none;
       position: absolute;
-      top: calc(100% + 10px);
+      top: calc(100% + 9.5px);
       right: -4px;
       width: 393px;
       background-color: var(--white-color);
@@ -322,12 +370,48 @@
         width: 200px;
         height: 107px; }
       .header__with__search .header__cart .header__cart_list .cart__empty__text {
+        font-size: 1.4rem;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         margin-block-start: 2em;
         margin-block-end: 1em; }
+      .header__with__search .header__cart .header__cart_list .cart__header {
+        text-align: left;
+        margin: 10px 12px;
+        font-size: 1.4rem;
+        color: #aaa;
+        font-weight: 300;
+        cursor: default; }
+      .header__with__search .header__cart .header__cart_list .cart__body .cart__list_product {
+        margin: 0;
+        padding: 0; }
+        .header__with__search .header__cart .header__cart_list .cart__body .cart__list_product .cart__product__item {
+          display: flex;
+          padding: 12px;
+          list-style: none;
+          cursor: pointer; }
+          .header__with__search .header__cart .header__cart_list .cart__body .cart__list_product .cart__product__item .cart__product-img {
+            width: 42px;
+            height: 42px;
+            border: 1px solid rgba(0, 0, 0, 0.09); }
+          .header__with__search .header__cart .header__cart_list .cart__body .cart__list_product .cart__product__item .cart__product__info {
+            margin-left: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.4rem;
+            color: var(--text-color); }
+            .header__with__search .header__cart .header__cart_list .cart__body .cart__list_product .cart__product__item .cart__product__info .cart__product__price {
+              font-weight: 520;
+              color: #eb836a; }
+        .header__with__search .header__cart .header__cart_list .cart__body .cart__list_product .cart__product__item:hover {
+          background-color: var(--light-color); }
+      .header__with__search .header__cart .header__cart_list .cart__footer {
+        display: flex;
+        justify-content: flex-end;
+        margin: 16px 9px; }
     .header__with__search .header__cart .header__cart__no__product {
-      font-size: 1.4rem;
+      padding: 20px 0px;
       font-weight: 500; }
     .header__with__search .header__cart .no__product-img,
     .header__with__search .header__cart .cart__empty__text,

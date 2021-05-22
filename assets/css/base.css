@@ -119,6 +119,9 @@ html {
 .btn:hover {
   background-color: rgba(0, 0, 0, 0.05); }
 
+.btn--cart:hover {
+  opacity: 0.9; }
+
 .btn.btn--primary {
   color: var(--white-color);
   background-color: var(--primary-color); }
