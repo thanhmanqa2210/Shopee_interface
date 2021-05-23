@@ -8,6 +8,7 @@
     <title>Shop_demo</title>
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.3/fontawesome-free-5.15.3-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
@@ -233,7 +234,60 @@
                 </div>
             </div>
         </header>
-        <div class="container "></div>
+        <div class="container">
+            <div class="grid_full_width">
+                <div class="grid_row">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__icon__heading fas fa-list"></i>DANH MỤC
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item-active">
+                                    <a href="#" class="category-item__link">Sản Phẩm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Giày Cao Gót Công Sở</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Giày Nữ Sandals</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Giày Nữ Mới Nhất</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Giày Nam Mới Nhất</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home__filter">
+                            <span class="filter__sort">Sắp xếp theo</span>
+                            <button class="btn filter__btn btn--primary">Phổ Biến</button>
+                            <button class="btn filter__btn">Mới Nhất</button>
+                            <button class="btn filter__btn">Bán Chạy</button>
+                            <div class="home__select__price">
+                                <span class="select__label">Giá</span>
+                                <i class="fas fa-chevron-down"></i>
+                                <ul class="select__sort__price">
+                                    <li class="select__price-item">Giá: Thấp đến Cao</li>
+                                    <li class="select__price-item">Giá: Cao đến Thấp</li>
+                                </ul>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="page__count-number">1</span>
+                                <span class="page__number">/4</span>
+                                <a href="#" class="filter__next__page">
+                                    <i class="btn__page-nav icon__left fas fa-chevron-left"></i>
+                                    <i class="btn__page-nav icon__right fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer "></div>
     </div>
     <!-- modal__layout -->
@@ -324,5 +378,7 @@
     <!-- </div>
     </div> -->
 </body>
+
+</html>
 
 </html>
