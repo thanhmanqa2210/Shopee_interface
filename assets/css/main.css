@@ -229,6 +229,14 @@
         border-right: 1px solid #ccc;
         margin: 6px 0px;
         line-height: 34px; }
+  .header .mid__cushion {
+    position: fixed;
+    display: none;
+    width: 100%;
+    top: 0;
+    height: 80px;
+    background-image: linear-gradient(to bottom, #f53e2d, #ff6533);
+    z-index: 2; }
 
 .header__with__search {
   height: 80px;

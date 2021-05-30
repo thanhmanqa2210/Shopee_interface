@@ -278,6 +278,15 @@
                 }
             }
         }
+        .mid__cushion {
+            position: fixed;
+            display: none;
+            width: 100%;
+            top: 0;
+            height: 80px;
+            background-image: linear-gradient(to bottom, rgb(245, 62, 45), rgb(255, 101, 51));
+            z-index: 2;
+        }
     }
     
     .header__with__search {
