@@ -1,4 +1,7 @@
 /* header */
+.app {
+  overflow: hidden; }
+
 .header {
   height: 120px;
   background-image: linear-gradient(to bottom, #f53e2d, #ff6533); }
@@ -378,7 +381,8 @@
     .header__with__search .header__cart .header__cart__wrap {
       position: relative;
       display: inline-block;
-      padding: 0px 10px; }
+      padding: 0px 10px;
+      -webkit-tap-highlight-color: transparent; }
       .header__with__search .header__cart .header__cart__wrap .cart__notice {
         position: absolute;
         padding: 1px 6px;
@@ -694,6 +698,47 @@
         background-color: #f9f9f9;
         cursor: default; }
 
+/* mobile_category */
+.mobile_category {
+  display: none;
+  margin-bottom: -15px; }
+  .mobile_category .category_list {
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+    padding-left: 0px; }
+    .mobile_category .category_list .category_item {
+      border-radius: 5px;
+      flex-shrink: 0;
+      margin: 0 12px 10px 0px; }
+      .mobile_category .category_list .category_item:nth-of-type(3n - 2) {
+        background-color: #86afd7; }
+      .mobile_category .category_list .category_item:nth-of-type(3n - 1) {
+        background-color: #76c9bd; }
+      .mobile_category .category_list .category_item:nth-of-type(3n) {
+        background-color: #88cf81; }
+      .mobile_category .category_list .category_item .item-link {
+        --line-height: 2rem;
+        text-decoration: none;
+        display: flex;
+        color: var(--white-color);
+        font-size: 1.4rem;
+        width: 110px;
+        text-align: center;
+        align-items: center;
+        padding: 0 6px;
+        text-overflow: ellipsis;
+        line-height: var(--line-height);
+        height: calc(var(--line-height) * 2);
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        user-select: none;
+        -webkit-user-drag: none; }
+  .mobile_category .category_list::-webkit-scrollbar {
+    display: none; }
+
 /*home product*/
 .home__product {
   margin-bottom: 10px; }
@@ -966,10 +1011,11 @@
       margin-bottom: 5px;
       width: 86px;
       height: 22px; }
-  .footer .footer__bottom {
-    text-align: center;
-    margin-top: 20px;
-    padding: 40px;
-    font-size: 1.2rem;
-    background-color: whitesmoke;
-    color: #737373; }
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding: 40px;
+  font-size: 1.2rem;
+  background-color: whitesmoke;
+  color: #737373; }
