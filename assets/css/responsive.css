@@ -1,0 +1,137 @@
+/* Mobile - Tablet */
+@media only screen and (max-width: 1023px) {
+  .app {
+    overflow: hidden; }
+  .container {
+    padding: 0px 6px; }
+    .container .mobile_category {
+      display: block; }
+  .hide-on-mobile-tablet {
+    display: none !important; }
+  .header {
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0; }
+    .header .header__sort__bar {
+      display: flex; }
+  .header__with__search .header__logo {
+    -webkit-tap-highlight-color: transparent; }
+    .header__with__search .header__logo .header__logo-img {
+      height: 49px;
+      width: 146px;
+      margin-right: 20px;
+      fill: var(--white-color);
+      cursor: pointer; }
+  .header__with__search .header__cart {
+    width: 100px; }
+    .header__with__search .header__cart .header__cart_list {
+      position: fixed;
+      top: 80px;
+      right: 0px;
+      padding: 0px calc((100% - 644px)/2);
+      width: 100%; }
+      .header__with__search .header__cart .header__cart_list .cart__body .cart__list_product {
+        height: 12vh; }
+    .header__with__search .header__cart .header__cart_list::after {
+      display: none; }
+  .header__with__search .header__user {
+    display: block; }
+    .header__with__search .header__user .navbar__item {
+      padding: 0px 10px;
+      color: var(--white-color);
+      font-weight: 390;
+      position: relative;
+      min-height: 20px; }
+      .header__with__search .header__user .navbar__item .user__img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin: -3px 4px;
+        border: 1px solid rgba(0, 0, 0, 0.19); }
+  .container {
+    margin-top: 126px;
+    padding-top: 10px; }
+  .home__product .product__item .product__item_name {
+    font-size: 1.35rem; }
+  .home__product .product__item .product__item_price {
+    font-size: 1.4rem; }
+  .home__product .product__item .product_item--action .action-heart {
+    font-size: 1.1rem; }
+  .home__product .product__item .product_item--action .action-rating {
+    font-size: 0.8rem;
+    margin-left: -10px; }
+  .home__product .product__item .product_item--action .sold--quantity {
+    font-size: 1rem; } }
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none; } }
+
+/* moblie */
+@media screen and (max-width: 739px) {
+  .hide-on-mobile {
+    display: none !important; }
+  .header .mid__cushion {
+    display: block; }
+  .header__with__search .mobile_icon {
+    display: flex;
+    color: var(--white-color);
+    font-size: 2rem; }
+    .header__with__search .mobile_icon .item__icon {
+      margin: 0 5px 0 10px; }
+    .header__with__search .mobile_icon .header_search {
+      height: 46px;
+      display: none;
+      position: fixed;
+      width: 100%;
+      top: 80px;
+      z-index: 1;
+      animation: slipDown linear 0.1s; }
+      .header__with__search .mobile_icon .header_search .search__icon__search {
+        margin: 0px 12px 0 2px; }
+    .header__with__search .mobile_icon .checkbox__search:checked ~ .header_search {
+      display: flex; }
+  .header__with__search .header__logo {
+    margin-left: calc(50% - 135px); }
+    .header__with__search .header__logo .header__logo-img {
+      height: 30px;
+      width: 126px; }
+  .header__with__search .header__cart {
+    margin-left: calc(12%); }
+  .header__with__search .header__user .navbar__item {
+    padding: 0px 10px;
+    color: var(--white-color);
+    font-weight: 390;
+    position: relative;
+    min-height: 20px; }
+    .header__with__search .header__user .navbar__item .user__img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.19); }
+  .header__with__search .item__icon,
+  .header__with__search .header__logo,
+  .header__with__search .header__cart,
+  .header__with__search .header__user {
+    z-index: 3; }
+  .pagination {
+    font-size: 1.6rem; }
+    .pagination .pagination__item {
+      margin: 0px 5px; }
+      .pagination .pagination__item .item__link {
+        line-height: 2.4rem;
+        min-width: 24px;
+        height: 24px; }
+        .pagination .pagination__item .item__link .item__icon {
+          line-height: 2.5rem; }
+    .pagination .item__active .item__link {
+      color: var(--white-color);
+      background-color: var(--primary-color); }
+    .pagination .item__active .item__link:hover {
+      opacity: 0.9; }
+  .footer {
+    padding: 65px 10px 0px; } }
